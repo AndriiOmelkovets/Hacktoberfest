@@ -29,6 +29,7 @@ public class OcrTest {
             String result1 = instance1.doOCR(imageFile);
             System.out.println(result);
              System.out.println(result1);
+             System.out.println(result.matches("\No\.\d*")); //
         } catch (TesseractException e) {
             System.err.println(e.getMessage());
         }
