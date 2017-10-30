@@ -20,7 +20,7 @@ public class OcrTest {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        File imageFile = new File("370_2017-08-01.pdf");
+        File imageFile = new File("370_2017-08-05.pdf");
         ITesseract instance = new Tesseract();  // JNA Interface Mapping
         //ITesseract instance = new Tesseract1(); // JNA Direct Mapping
 
