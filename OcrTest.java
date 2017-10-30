@@ -22,11 +22,13 @@ public class OcrTest {
         
         File imageFile = new File("370_2017-08-05.pdf");
         ITesseract instance = new Tesseract();  // JNA Interface Mapping
-        //ITesseract instance = new Tesseract1(); // JNA Direct Mapping
+        ITesseract instance1 = new Tesseract1(); // JNA Direct Mapping
 
         try {
             String result = instance.doOCR(imageFile);
+            String result1 = instance1.doOCR(imageFile);
             System.out.println(result);
+             System.out.println(result1);
         } catch (TesseractException e) {
             System.err.println(e.getMessage());
         }
