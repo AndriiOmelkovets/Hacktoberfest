@@ -19,8 +19,8 @@ public class OcrTest {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-        File imageFile = new File("370_2017-08-05.pdf");
+        String BasePathFiles = "";
+        File imageFile = new File(BasePathFile+ "370_2017-08-05.pdf");
         ITesseract instance = new Tesseract();  // JNA Interface Mapping
         ITesseract instance1 = new Tesseract1(); // JNA Direct Mapping
 
